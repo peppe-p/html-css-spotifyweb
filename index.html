@@ -24,70 +24,123 @@
     </header>
 
 
-    <!-- ##### LATERAL NAVBAR ##### -->
-    <aside class="d-flex flex-column">
-        <div class="button_list">
-            <ul>
-                <li id="Home">
-                    <img src="./assets/img/home.svg" alt="Icona Home Spotify">
-                    <a href="#">Home</a>
-                </li>
-                <li id="Search">
-                    <img src="./assets/img/search.svg" alt="Icona Ricerca Spotify">
-                    <a href="#">Cerca</a>
-                </li>
-                <li id="MyLibrary">
-                    <img src="./assets/img/libreria.svg" alt="Icona La tua ibreria Spotify">
-                    <a href="#">La tua libreria</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="side_playlist">
-            <div class="create_playlist">
-                <h5>PLAYLIST</h5>
-                <a class="bttn_addplay d-flex align-items-center" href="#">
-                    <span class="add_playlist"><i class="fas fa-plus"></i></span>
-                    <span>Crea Playlist</span>
-                </a>
-            </div>
-
-            <div class="side_list_playlist overflow-auto">
-                <ul>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="side_profile_section d-flex flex-column justify-content-end">
-            <div class="download_app">
-                <a class="d-flex align-items-center" href="#">
-                    <i class="bi bi-arrow-down-circle"></i>
-                    <span>Installa App</span>
-                </a>
-            </div>
-            <hr>
-            <div class="side_profile d-flex align-items-center">
-                <img id="Profile_img" src="./assets/img/profile.svg" alt="Profile Icon">
-                <h5>John Doe</h5>
-            </div>
-        </div>
-    </aside>
-
 
     <!-- ##### MAIN PAGE ##### -->
-    <main>
-        <div class="main_header">
+    <main class="d-flex overflow_auto">
+
+        <!-- ##### LATERAL NAVBAR ##### -->
+        <aside class="d-flex flex-column">
+            <div class="button_list">
+                <ul>
+                    <li id="Home">
+                        <img src="./assets/img/home.svg" alt="Icona Home Spotify">
+                        <a href="#">Home</a>
+                    </li>
+                    <li id="Search">
+                        <img src="./assets/img/search.svg" alt="Icona Ricerca Spotify">
+                        <a href="#">Cerca</a>
+                    </li>
+                    <li id="MyLibrary">
+                        <img src="./assets/img/libreria.svg" alt="Icona La tua ibreria Spotify">
+                        <a href="#">La tua libreria</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="side_playlist">
+                <div class="create_playlist">
+                    <h5>PLAYLIST</h5>
+                    <a class="bttn_addplay d-flex align-items-center" href="#">
+                        <span class="add_playlist"><i class="fas fa-plus"></i></span>
+                        <span>Crea Playlist</span>
+                    </a>
+                </div>
+
+                <div class="side_list_playlist overflow-auto">
+                    <ul>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="side_profile_section d-flex flex-column justify-content-end">
+                <div class="download_app">
+                    <a class="d-flex align-items-center" href="#">
+                        <i class="bi bi-arrow-down-circle"></i>
+                        <span>Installa App</span>
+                    </a>
+                </div>
+                <hr>
+                <div class="side_profile d-flex align-items-center">
+                    <img id="Profile_img" src="./assets/img/profile.svg" alt="Profile Icon">
+                    <h5>John Doe</h5>
+                </div>
+            </div>
+        </aside>
+
+
+        <!-- ##### CORE PAGE ##### -->
+        <div class="core_div">
+            <nav class="core_nav">
+                <ul class="d-flex justify-content-center">
+                    <li><a href="#">IN EVIDENZA</a><span class="dash_nav_ON"></span></li>
+                    <li><a href="#">PODCAST</a><span class="dash_nav"></span></li>
+                    <li><a href="#">CLASSIFICHE</a><span class="dash_nav"></span></li>
+                    <li><a href="#">GENERI E MOOD</a><span class="dash_nav"></span></li>
+                    <li><a href="#">NUOVE USCITE</a><span class="dash_nav"></span></li>
+                    <li><a href="#">SCOPRI</a><span class="dash_nav"></span></li>
+                </ul>
+            </nav>
+
+            <div class="contain_page">
+                <div class="recently">
+                    <h3>Recently played</h3>
+                    <div class="recently_list d-flex flex-wrap">
+                        <div class="album_card">
+                            <img src="./assets/img/metal_lifting.jpg" alt="">
+                            <h4 class="card_title">Heavy Metal</h4>
+                            <h5 class="card_subtitle">Subtitle</h5>
+                        </div>
+                        <div class="album_card">
+                            <img src="./assets/img/stranger.jpeg" alt="">
+                            <h4 class="card_title">Stranger Things, Vol.1 (a Netflix Original Series
+                                Soundtrack)</h4>
+                            <h5 class="card_subtitle">Kyle Dixon & Michaels Stein</h5>
+                        </div>
+                        <div class="album_card">
+                            <img src="./assets/img/aquietplace.jpeg" alt="">
+                            <h4 class="card_title">A quiet place</h4>
+                            <h5 class="card_subtitle">Subtitle</h5>
+                        </div>
+                        <div class="album_card">
+                            <img src="./assets/img/split.jpeg" alt="">
+                            <h4 class="card_title">Split</h4>
+                            <h5 class="card_subtitle">Subtitle</h5>
+                        </div>
+                        <div class="album_card">
+                            <img src="./assets/img/cure.jpeg" alt="">
+                            <h4 class="card_title">A cure for wellness</h4>
+                            <h5 class="card_subtitle">Subtitle</h5>
+                        </div>
+                        <div class="album_card">
+                            <img src="./assets/img/sinister.jpeg" alt="">
+                            <h4 class="card_title">Sinister</h4>
+                            <h5 class="card_subtitle">Subtitle</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
     </main>

@@ -8,7 +8,13 @@
 /* ######################################## */
 body{
     font-weight: 500;
+    color: white !important;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+} 
 
 a, a:hover {
     text-decoration: none !important;
@@ -23,6 +29,10 @@ a:hover {
 
 ul, li {
     list-style: none !important;
+}
+
+.reflex {
+    transform: rotateY(180deg);
 }
 
 /* ################################# */
@@ -42,11 +52,53 @@ ul, li {
 .bttn:hover {
     text-decoration: none;
     background-color: white;
-    color: black;
+    color: black !important;
 }
 
+.bar_off {
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+    height: 5px;
+    background-color: gray;
+    cursor: pointer;
+}
+.bar_live {
+    border-radius: 20px;
+    display: inline-block;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+}
+.bar_sphere {
+    display: none;
+    position: absolute;
+    top: 1px;
+    right: -20px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: yellowgreen;
+}
+.bar_off:hover .bar_live {
+    background-color: yellowgreen;
+}
+.bar_off:hover .bar_sphere {
+    display: inline-block;
+}
 
-
+.bar_music {
+    width: 450px;
+    margin: 0px 30px;
+}
+.bar_volume {
+    width: 150px;
+    margin: 0px 5px;
+}
 
 
 /* ############################## */
@@ -105,7 +157,7 @@ aside .button_list img {
     border-left: 3px inset greenyellow ;
 }
 #Home a {
-    color: white;
+    color: white !important;
 }
 
 
@@ -160,6 +212,7 @@ aside .button_list img {
     margin-right: 15px;
     font-weight: 600;
     color: white;
+    cursor: pointer;
 }
 #Profile_img {
     height: 30px;
@@ -178,7 +231,7 @@ aside .button_list img {
 main {
     height: 100vh;
     width: 100vw;
-    background-color: burlywood;
+    background-color: #141922;
 }
 
 
@@ -186,7 +239,7 @@ main {
 /* ############################## */
 /* ####### FOOTER CLASSES ####### */
 /* ############################## */
-footer {
+.controller {
     height: 150px;
     width: 100%;
     position: fixed;
@@ -195,4 +248,56 @@ footer {
     left: 0;
     background-color: #282828;
     overflow: hidden;
+    padding: 25px;
+}
+.controller * {
+    height: none !important;
+}
+
+.left_controller {
+    width: 20%;
+}
+.left_controller img {
+    height: 65px;
+    margin-right: 15px;
+}
+.left_controller > div {
+    margin-right: 50px;
+}
+.left_controller i {
+    margin: 0px 10px;
+    color: gray;
+}
+.left_controller i:hover {
+    color: white;
+    cursor: pointer;
+}
+.albumname_preview {
+    color: white;
+    font-weight: 800;
+}
+
+.console {
+    width: 60%;
+}
+.console > * {
+    margin: 5px 0px;
+}
+.commands_console * {
+    margin: 0px 15px;
+    cursor: pointer;
+}
+.commands_console i[class*="circle"] {
+    font-size: 2rem;
+    margin: 0px 20px;
+}
+.music_bar h6 {
+    font-size: 0.8rem;
+}
+
+.right_controller i:not(:last-child) {
+    margin: 0px 10px;
+}
+.right_controller i[class*="desktop"]{
+    font-size: 0.8em;
 }

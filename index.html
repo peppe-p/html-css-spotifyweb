@@ -25,8 +25,59 @@
 
 
     <!-- ##### LATERAL NAVBAR ##### -->
-    <aside>
-        <h4>PROVAS PROVAS</h4>
+    <aside class="d-flex flex-column">
+        <div class="button_list">
+            <ul>
+                <li id="Home">
+                    <img src="./assets/img/home.svg" alt="Icona Home Spotify">
+                    <a href="#">Home</a>
+                </li>
+                <li id="Search">
+                    <img src="./assets/img/search.svg" alt="Icona Ricerca Spotify">
+                    <a href="#">Cerca</a>
+                </li>
+                <li id="MyLibrary">
+                    <img src="./assets/img/libreria.svg" alt="Icona La tua ibreria Spotify">
+                    <a href="#">La tua libreria</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="side_playlist">
+            <div class="create_playlist">
+                <h5>PLAYLIST</h5>
+                <a class="bttn_addplay d-flex align-items-center" href="#">
+                    <span class="add_playlist"><i class="fas fa-plus"></i></span>
+                    <span>Crea Playlist</span>
+                </a>
+            </div>
+
+            <div class="side_list_playlist">
+                <ul>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="side_profile_section d-flex flex-column justify-content-end">
+            <div class="download_app">
+                <a class="d-flex align-items-center" href="#">
+                    <i class="bi bi-arrow-down-circle"></i>
+                    <span>Installa App</span>
+                </a>
+            </div>
+            <hr>
+            <div class="side_profile d-flex align-items-center">
+                <img id="Profile_img" src="./assets/img/profile.svg" alt="Profile Icon">
+                <h5>John Doe</h5>
+            </div>
+        </div>
     </aside>
 
 

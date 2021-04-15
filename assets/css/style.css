@@ -6,10 +6,28 @@
 /* ######################################## */
 /* ####### COMMON HTML-CSS SELECTOR ####### */
 /* ######################################## */
+body{
+    font-weight: 500;
+}
 
-/* ############################### */
-/* ####### UTILITY CLASSES ####### */
-/* ############################### */
+a, a:hover {
+    text-decoration: none !important;
+}
+
+a {
+    color: gray !important;
+}
+a:hover {
+    color: white !important;
+}
+
+ul, li {
+    list-style: none !important;
+}
+
+/* ################################# */
+/* ####### COMPONENT CLASSES ####### */
+/* ################################# */
 .bttn {
     text-decoration: none;
     border-radius: 20px;
@@ -26,6 +44,9 @@
     background-color: white;
     color: black;
 }
+
+
+
 
 
 /* ############################## */
@@ -52,16 +73,103 @@ header {
 /* ############################### */
 aside {
     height: 100%;
-    width: 250px;
+    min-width: 260px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #111;
     overflow: hidden;
-    color: white;
-    padding-top: 110px;
+    padding: 100px 15px 160px 0px;
+    color: gray !important;
 }
+aside > div:not(:first-child) {
+    padding: 0px 25px;
+}
+aside ul {
+    list-style: none;
+}
+aside li {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 0px 25px;
+}
+aside .button_list img {
+    height: 35px;
+    margin-right: 10px;
+}
+
+#Home {
+    border-left: 3px inset greenyellow ;
+}
+#Home a {
+    color: white;
+}
+
+
+.side_playlist h5 {
+    color: white;
+    font-weight: 600;
+}
+
+.create_playlist > * {
+    margin: 15px 0px;
+}
+
+.bttn_addplay * {
+    margin-right: 10px;
+}
+
+.add_playlist {
+    background-color: gray;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+.add_playlist i {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 1.5rem;
+}
+
+.side_list_playlist li {
+    padding: 0px 0px;
+    margin: 15px 0px;
+}
+
+.side_profile_section {
+    height: 100%;
+}
+.side_profile_section hr {
+    border: none;
+    height: 1px;
+    background-color: gray;
+}
+.download_app a * {
+    margin-right: 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.side_profile > * {
+    margin-right: 15px;
+    font-weight: 600;
+    color: white;
+}
+#Profile_img {
+    height: 30px;
+    width: 30px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+
+
 
 
 /* ############################## */

@@ -114,7 +114,7 @@ ul, li {
 /* ALBUM CARD */
 .album_card {
     text-align: center;
-    margin: 10px 10px;
+    margin: 10px 20px 10px 0px;
     max-width: 200px;
 }
 .album_card * {
@@ -164,8 +164,6 @@ main {
     width: 100vw;
     background-color: #141922;
 }
-
-
 
 
 
@@ -280,6 +278,7 @@ aside .button_list img {
 /* ################################# */
 .core_div {
     padding-top: 110px;
+    margin-bottom: 100px;
     width: 100vw;
 }
 .core_nav {
@@ -310,6 +309,19 @@ aside .button_list img {
     display: inline-block;
 }
 
+.row_main {
+    padding: 0px 15px;
+    margin-bottom: 20px;
+}
+.row_main > h3 {
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+.row_main > h5 {
+    color: gray;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
 
 
 

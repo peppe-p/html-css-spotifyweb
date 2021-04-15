@@ -132,7 +132,7 @@ aside {
     left: 0;
     background-color: #111;
     overflow: hidden;
-    padding: 100px 15px 160px 0px;
+    padding: 100px 15px 140px 0px;
     color: gray !important;
 }
 aside > div:not(:first-child) {
@@ -173,6 +173,9 @@ aside .button_list img {
 .bttn_addplay * {
     margin-right: 10px;
 }
+.bttn_addplay:hover .add_playlist {
+    background-color: white;
+}
 
 .add_playlist {
     background-color: gray;
@@ -188,7 +191,9 @@ aside .button_list img {
     color: black;
     font-size: 1.5rem;
 }
-
+.side_list_playlist {
+    max-height: 250px;
+}
 .side_list_playlist li {
     padding: 0px 0px;
     margin: 15px 0px;
@@ -240,7 +245,7 @@ main {
 /* ####### FOOTER CLASSES ####### */
 /* ############################## */
 .controller {
-    height: 150px;
+    height: 120px;
     width: 100%;
     position: fixed;
     z-index: 2;
@@ -278,7 +283,7 @@ main {
 }
 
 .console {
-    width: 60%;
+    width: 80%;
 }
 .console > * {
     margin: 5px 0px;
@@ -295,6 +300,9 @@ main {
     font-size: 0.8rem;
 }
 
+.right_controller {
+    width: 20%;
+}
 .right_controller i:not(:last-child) {
     margin: 0px 10px;
 }

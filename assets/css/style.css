@@ -143,9 +143,8 @@ header {
     z-index: 2;
     top: 0;
     left: 0;
-    background-color: black;
+    background-color: #00000060;
     overflow: hidden;
-    opacity: 0.8;
     padding: 15px;
 }
 #logo {
@@ -160,7 +159,7 @@ header {
 /* ####### MAIN PAGE CLASSES ####### */
 /* ################################# */
 main {
-    height: 100vh;
+    height: calc(100vh - 120px);
     width: 100vw;
     background-color: #141922;
 }
@@ -171,15 +170,14 @@ main {
 /* ####### SIDEBAR CLASSES ####### */
 /* ############################### */
 aside {
-    height: 100%;
+    max-height: 100%;
     min-width: 260px;
     top: 0;
     left: 0;
-    z-index: 0;
     background-color: black;
-    overflow: hidden;
-    padding: 100px 15px 140px 0px;
+    padding: 100px 15px 15px 0px;
     color: gray !important;
+    overflow: hidden;
 }
 aside > div:not(:first-child) {
     padding: 0px 25px;
@@ -207,7 +205,9 @@ aside .button_list img {
     color: white !important;
 }
 
-
+.side_playlist {
+    padding: 0px 25px;
+}
 .side_playlist h5 {
     color: white;
     font-weight: 900;
@@ -239,16 +239,18 @@ aside .button_list img {
     font-size: 1.5rem;
 }
 .side_list_playlist {
-    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: auto;
 }
 .side_list_playlist li {
     padding: 0px 0px;
     margin: 15px 0px;
 }
-
-.side_profile_section {
-    height: 100%;
+.side_list_playlist ul {
+    margin: 0;
 }
+
 .side_profile_section hr {
     border: none;
     height: 1px;
@@ -278,7 +280,6 @@ aside .button_list img {
 /* ################################# */
 .core_div {
     padding-top: 110px;
-    margin-bottom: 100px;
     width: 100vw;
 }
 .core_nav {
@@ -332,7 +333,7 @@ aside .button_list img {
     height: 120px;
     width: 100%;
     position: fixed;
-    z-index: 2;
+    z-index: 0;
     bottom: 0;
     left: 0;
     background-color: #282828;

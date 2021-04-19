@@ -29,6 +29,12 @@
                 <div class="logo d-flex justify-content-center align-items-center">
                     <img id="logo" src="./assets/img/logo.svg" alt="Spotify Logo">
                 </div>
+                <div class="button_list_sm d-flex-sm flex-column">
+                    <img src="./assets/img/logo-small.svg" alt="Logo Spotify piccolo">
+                    <img src="./assets/img/home.svg" alt="Icona Home Spotify">
+                    <img src="./assets/img/search.svg" alt="Icona Ricerca Spotify">
+                    <img src="./assets/img/libreria.svg" alt="Icona La tua ibreria Spotify">
+                </div>
                 <div class="button_list">
                     <ul>
                         <li id="Home">
@@ -69,6 +75,17 @@
                 </div>
             </div>
 
+            <div class="side_profile_section_sm d-sm-flex">
+                <div class="download_app_sm d-sm-flex">
+                    <a class="d-flex" href="#">
+                        <i class="bi bi-arrow-down-circle"></i>
+                    </a>
+                </div>
+                <div class="side_profile_sm d-sm-flex">
+                    <img id="Profile_img" src="./assets/img/profile.svg" alt="Profile Icon">
+                </div>
+            </div>
+
             <div class="side_profile_section d-flex flex-column">
                 <div class="download_app">
                     <a class="d-flex align-items-center" href="#">
@@ -86,14 +103,14 @@
 
 
         <!-- ##### CORE PAGE ##### -->
-        <div class="core_div overflow-auto">
+        <div class="core_div">
             <!-- ##### STICKY HEAD ##### -->
             <header class="d-flex justify-content-end align-items-center">
                 <a class=" bttn light_outline" href="#" role="button">EFFETTUA UPGRADE</a>
             </header>
 
             <nav class="core_nav">
-                <ul class="d-flex justify-content-center">
+                <ul class="d-flex justify-content-center flex-wrap">
                     <li><a href="#">IN EVIDENZA</a><span class="dash_nav_ON"></span></li>
                     <li><a href="#">PODCAST</a><span class="dash_nav"></span></li>
                     <li><a href="#">CLASSIFICHE</a><span class="dash_nav"></span></li>
@@ -230,7 +247,7 @@
     <!-- ##### CONTROLLER BOTTOM ##### -->
     <nav class="controller d-flex justify-content-between">
 
-        <div class="left_controller d-flex align-items-center">
+        <div class="left_controller d-flex align-items-center flex-fill">
             <img src="./assets/img/sinister.jpeg" alt="Sinister preview">
             <div class="d-flex flex-column">
                 <h6 class="albumname_preview">Sinister</h6>
@@ -240,7 +257,7 @@
             <i class="far fa-folder"></i>
         </div>
 
-        <div class="console d-flex flex-column align-items-center justify-content-center">
+        <div class="console d-flex flex-column align-items-center justify-content-center flex-fill">
             <div class="commands_console d-flex align-items-center">
                 <i class="fas fa-random"></i>
                 <i class="fas fa-step-backward"></i>
@@ -259,7 +276,7 @@
             </div>
         </div>
 
-        <div class="right_controller d-flex align-items-center justify-content-end">
+        <div class="right_controller d-flex align-items-center justify-content-end flex-fill">
             <i class="bi bi-list-ul"></i>
             <i class="fas fa-desktop"></i>
             <i class="bi bi-volume-up-fill"></i>

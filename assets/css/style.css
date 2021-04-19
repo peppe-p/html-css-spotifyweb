@@ -10,10 +10,16 @@
 /* ######################################## */
 /* ####### COMMON HTML-CSS SELECTOR ####### */
 /* ######################################## */
+html {
+    height:100%;
+	width:100%;
+}
 body{
     font-weight: 500;
     color: white !important;
     font-family: Spotify;
+    height:100%;
+	width:100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -207,7 +213,7 @@ aside {
     color: gray !important;
     overflow: hidden;
 }
-aside > div:not(:first-child) {
+.side_profile_section {
     padding: 0px 25px;
 }
 aside ul {
@@ -221,6 +227,9 @@ aside li {
     padding: 0px 25px;
     font-size: 0.8rem;
 }
+.button_list_sm {
+        display: none;
+    }
 aside .button_list img {
     height: 35px;
     margin-right: 10px;
@@ -279,6 +288,9 @@ aside .button_list img {
     margin: 0;
 }
 
+.side_profile_section_sm {
+    display: none !important;
+}
 .side_profile_section hr {
     border: none;
     height: 1px;
@@ -303,12 +315,15 @@ aside .button_list img {
 }
 
 
+
 /* ################################# */
 /* ####### CORE PAGE CLASSES ####### */
 /* ################################# */
 .core_div {
     padding-top: 110px;
     width: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .core_nav {
     width: 100%;
@@ -368,12 +383,9 @@ aside .button_list img {
     overflow: hidden;
     padding: 25px;
 }
-.controller * {
-    height: none !important;
-}
 
 .left_controller {
-    width: 20vw;
+    width: 20%;
 }
 .left_controller img {
     height: 65px;
@@ -400,7 +412,7 @@ aside .button_list img {
 }
 
 .console {
-    width: 80vw;
+    width: 80%;
 }
 .console > * {
     margin: 5px 0px;
@@ -418,11 +430,57 @@ aside .button_list img {
 }
 
 .right_controller {
-    width: 20vw;
+    width: 20%;
 }
 .right_controller i:not(:last-child) {
     margin: 0px 10px;
 }
 .right_controller i[class*="desktop"]{
     font-size: 0.8em;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .button_list_sm {
+        display: flex;
+        width: 100%;
+    }
+    .button_list_sm * {
+        cursor: pointer;
+    }
+    .button_list_sm img:first-child {
+        margin-bottom: 15px;
+    }
+    .button_list_sm img, #profile {
+        height: 30px;
+    }
+    .button_list {
+        display: none;
+    }
+    .logo {
+        display: none !important;
+    }
+    .side_playlist {
+        display: none;
+    }
+    .side_profile_section {
+        display: none !important;
+    }
+    .side_profile_sm {
+        margin: 0px;
+    }
+    .side_profile_section_sm {
+        width: 100%;
+        padding: 0px;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
+    aside {
+        padding: 5px;
+        min-width: 50px;
+        margin: 0px;
+        z-index: 10;
+    }
 }

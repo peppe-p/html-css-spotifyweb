@@ -1,0 +1,1 @@
+document.getElementById("recentplayed").innerHTML = "Musica Recente"

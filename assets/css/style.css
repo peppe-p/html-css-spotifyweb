@@ -73,14 +73,14 @@ ul, li {
     border-radius: 20px;
     display: inline-block;
     position: relative;
-    height: 5px;
+    height: 6px;
     background-color: gray;
     cursor: pointer;
 }
 .bar_live {
     border-radius: 20px;
     display: inline-block;
-    height: 5px;
+    height: 6px;
     background-color: white;
     position: absolute;
     top: 0;
@@ -106,11 +106,12 @@ ul, li {
 }
 
 .bar_music {
-    width: 450px;
+    width: 100%;
+    height: 6px;
     margin: 0px 30px;
 }
 .bar_volume {
-    width: 150px;
+    width: 100%;
     margin: 0px 5px;
 }
 
@@ -384,9 +385,9 @@ aside .button_list img {
     padding: 25px;
 }
 
-.left_controller {
+/* .left_controller {
     width: 20%;
-}
+} */
 .left_controller img {
     height: 65px;
     margin-right: 15px;
@@ -411,9 +412,9 @@ aside .button_list img {
     font-size: 0.8rem;
 }
 
-.console {
+/* .console {
     width: 80%;
-}
+} */
 .console > * {
     margin: 5px 0px;
 }
@@ -425,20 +426,25 @@ aside .button_list img {
     font-size: 2rem;
     margin: 0px 20px;
 }
+.music_bar {
+    width: 100%;
+}
 .music_bar h6 {
     font-size: 0.8rem;
 }
 
-.right_controller {
+/* .right_controller {
     width: 20%;
-}
+} */
 .right_controller i:not(:last-child) {
     margin: 0px 10px;
 }
 .right_controller i[class*="desktop"]{
     font-size: 0.8em;
 }
-
+.volume_bar {
+    width: 100px;
+}
 
 
 @media screen and (max-width: 576px) {
